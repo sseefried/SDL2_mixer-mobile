@@ -1,0 +1,2 @@
+source $HOME/ghc-ios/ghc-ios-scripts/configure-setup.sh
+$CONFIGURE_CMD --disable-shared --enable-static
