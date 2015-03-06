@@ -1,0 +1,8 @@
+LDFLAGS="$LDFLAGS -Wl,-framework,Foundation -Wl,-framework,UIKit"
+LDFLAGS="$LDFLAGS -Wl,-framework,OpenGLES -Wl,-framework,QuartzCore"
+LDFLAGS="$LDFLAGS -Wl,-framework,CoreAudio -Wl,-framework,AudioToolbox"
+export LDFLAGS="$LDFLAGS -Wl,-framework,CoreGraphics"
+
+$IOS_ARM_CONFIGURE_CMD \
+  --disable-shared --enable-static --disable-music-midi-native \
+  --enable-music-ogg
