@@ -1,0 +1,7 @@
+Makefile
+SDL2_mixer.pc
+build/
+config.log
+config.status
+*~
+libtool
